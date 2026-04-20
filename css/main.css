@@ -148,6 +148,7 @@ img {
   overflow: hidden;
   display: block;
   flex: 0 0 auto;
+  margin-top: -14px;
 }
 
 .home-intro {
@@ -208,6 +209,10 @@ img {
     flex-direction: column;
     text-align: center;
     gap: 14px;
+  }
+
+  .home-avatar {
+    margin-top: 0;
   }
 
   .home-intro p {
