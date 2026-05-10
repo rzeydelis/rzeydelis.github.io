@@ -399,6 +399,23 @@ footer .theme-by {
   text-align: center;
   margin: 10px 0 0;
 }
+footer .email-reveal {
+  display: inline-block;
+}
+footer .email-reveal summary {
+  cursor: pointer;
+  display: inline-block;
+  list-style: none;
+}
+footer .email-reveal summary::-webkit-details-marker {
+  display: none;
+}
+footer .email-address {
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
 
 @media only screen and (min-width: 768px) {
   footer {
