@@ -17,9 +17,9 @@ github:
   icon: "fa-github"
 
 twitter:
-  name: "Twitter"
-  baseURL: "https://twitter.com/"
-  icon: "fa-twitter"
+  name: "X"
+  baseURL: "https://x.com/"
+  icon: "fa-x-twitter"
 
 reddit:
   name: "Reddit"
