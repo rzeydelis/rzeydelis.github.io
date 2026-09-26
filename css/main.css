@@ -167,6 +167,38 @@ img {
   margin-bottom: 0;
 }
 
+.home-contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 22px;
+  margin-top: 16px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.home-contact-links a {
+  text-decoration: none;
+}
+
+.home-contact-links a:hover,
+.home-contact-links a:focus {
+  text-decoration: underline;
+}
+
+.home-contact-primary {
+  display: inline-block;
+  padding: 9px 14px;
+  border: 1px solid {{ site.link-col }};
+  border-radius: 5px;
+}
+
+.home-contact-primary:hover,
+.home-contact-primary:focus {
+  border-color: {{ site.hover-col }};
+}
+
 .home-posts-title {
   margin: 0 0 10px;
   font-size: 15px;
@@ -190,19 +222,49 @@ img {
 }
 
 .home-fun-projects-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
   margin: 0;
-  padding-left: 20px;
+  padding: 0;
+  list-style: none;
 }
 
-.home-fun-projects-list li {
-  margin: 0 0 8px;
-  font-size: 16px;
-  line-height: 1.6;
+.home-project {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 22px;
+  border: 1px solid #c9c9c9;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.42);
   color: #333;
 }
 
-.home-fun-projects-list li:last-child {
-  margin-bottom: 0;
+.home-project h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.home-project p {
+  margin: 0 0 18px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.home-project a {
+  align-self: flex-start;
+  margin-top: auto;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.home-project a:hover,
+.home-project a:focus {
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 767px) {
@@ -224,12 +286,16 @@ img {
     font-size: 16px;
   }
 
-  .home-fun-projects-list {
-    padding-left: 18px;
+  .home-contact-links {
+    justify-content: center;
   }
 
-  .home-fun-projects-list li {
-    font-size: 15px;
+  .home-fun-projects-list {
+    grid-template-columns: 1fr;
+  }
+
+  .home-project {
+    padding: 18px;
   }
 }
 
