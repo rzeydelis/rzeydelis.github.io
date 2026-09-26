@@ -34,13 +34,13 @@ navbar-links:
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#e6e6e6"
+navbar-col: "#F7F7F4"
 navbar-text-col: "#404040"
-navbar-children-col: "#e6e6e6"
-page-col: "#e6e6e6"
+navbar-children-col: "#F7F7F4"
+page-col: "#F7F7F4"
 link-col: "#0064B4"
 hover-col: "#004C8A"
-footer-col: "#e6e6e6"
+footer-col: "#F7F7F4"
 footer-text-col: "#777777"
 footer-link-col: "#404040"
 
@@ -63,7 +63,6 @@ author:
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
-  rss: true
   linkedin: robertzeydelis
   email: "robert.zeydelis@gmail.com"
   #facebook: deanattali
@@ -90,26 +89,6 @@ share-links-active:
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
 url-pretty: "bobbyzeydelis.com"  # eg. "deanattali.com/beautiful-jekyll"
-
-# --- Web Statistics Section --- #
-
-# Fill in your Google Analytics gtag.js ID to track your website using gtag
-#gtag: ""
-
-# Fill in your Google Analytics ID to track your website using GA
-google_analytics: UA-155054350-1
-
-# Google Tag Manager ID
-#gtm: ""
-
-# Matomo (aka Piwik) Web statistics
-# Uncomment the following section to enable Matomo. The opt-out parameter controls
-# whether or not you want to allow users to opt out of tracking.
-
-#matomo:
-#  site_id: "9"
-#  uri: "demo.wiki.pro"
-#  opt-out: true
 
 # --- Comments --- #
 

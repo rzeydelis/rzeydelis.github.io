@@ -13,28 +13,19 @@
   {% if site.share-links-active.twitter %}
   <!--- Share on X -->
     <a href="https://x.com/intent/tweet?text={{ page.title | url_encode }}&url={{ page.url | absolute_url | url_encode }}"
-      class="btn btn-social-icon btn-twitter" title="Share on X">
-      <span class="fa fa-fw fa-x-twitter" aria-hidden="true"></span>
-      <span class="sr-only">X</span>
-    </a>
+      title="Share on X">X</a>
   {% endif %}
 
   {% if site.share-links-active.facebook %}
   <!--- Share on Facebook -->
     <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}"
-      class="btn btn-social-icon btn-facebook" title="Share on Facebook">
-      <span class="fa fa-fw fa-facebook" aria-hidden="true"></span>
-      <span class="sr-only">Facebook</span>
-    </a>
+      title="Share on Facebook">Facebook</a>
   {% endif %}
 
   {% if site.share-links-active.linkedin %}
   <!--- Share on LinkedIn -->
     <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url | url_encode }}"
-      class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
-      <span class="fa fa-fw fa-linkedin" aria-hidden="true"></span>
-      <span class="sr-only">LinkedIn</span>
-    </a>
+      title="Share on LinkedIn">LinkedIn</a>
   {% endif %}
 
 </section>
