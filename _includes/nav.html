@@ -1,12 +1,14 @@
 <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
   <div class="container">
     <div class="navbar-header">
+      {% if site.navbar-links and site.navbar-links.size > 0 %}
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      {% endif %}
       {%- if site.title-img -%}
         <a class="navbar-brand navbar-brand-logo" href="{{ '' | absolute_url }}"><img src="{{ site.title-img }}"/></a>
       {%- else -%}
@@ -14,6 +16,7 @@
       {%- endif -%}
     </div>
 
+    {% if site.navbar-links and site.navbar-links.size > 0 %}
     <div class="collapse navbar-collapse" id="main-navbar">
       <ul class="nav navbar-nav navbar-right">
       {%- for link in site.navbar-links -%}
@@ -34,6 +37,7 @@
       {%- endfor -%}
       </ul>
     </div>
+    {% endif %}
 
 	{% if page.image and (layout.show-avatar or page.show-avatar) %}
 	<div class="avatar-container">
