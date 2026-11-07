@@ -126,7 +126,7 @@ To use JustComments you first need to have an account. After you just need to co
 
 ### Adding Google Analytics to track page views
 
-Beautiful Jekyll lets you easily add Google Analytics to all your pages. This will let you track all sorts of information about visits to your website, such as how many times each page is viewed and where (geographically) your users come from.  To add Google Analytics, simply sign up to [Google Analytics](https://www.google.com/analytics/) to obtain your Google Tracking ID, and add this tracking ID to the `google_analytics` parameter in `_config.yml`.
+The production homepage loads Google Analytics directly using Measurement ID `G-YVJ7B5R6WM`, configured with `gtag` in `_config.yml`. After deploying the site, open the homepage and check the Analytics Realtime report for a page view. To manage tracking through Tag Manager instead, remove `gtag`, enable `gtm`, and configure the Google tag in that container. Direct GA4 tracking takes priority when `gtag` is set. [Google Analytics setup guide](https://support.google.com/analytics/answer/14183469)
 
 ### Sharing blog posts on social media
 

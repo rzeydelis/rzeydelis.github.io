@@ -11,10 +11,10 @@ description: Subscribe
 # *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
 
 # url is the the website domain URL without a trailing slash
-#url: "https://example.com"
+url: "https://bobbyzeydelis.com"
 
 # baseurl should be an empty string
-#baseurl: ""
+baseurl: ""
 
 # --- Navigation bar options --- #
 
@@ -112,6 +112,12 @@ staticman:
     secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
 
 # --- Misc --- #
+
+# Google Analytics 4 Measurement ID for the production homepage.
+gtag: "G-YVJ7B5R6WM"
+
+# Optional Tag Manager container. Direct GA4 tracking takes priority when set.
+# gtm: "GTM-WLTKB6B7"
 
 # Facebook App ID
 # fb_app_id: ""
