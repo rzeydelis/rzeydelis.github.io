@@ -9,9 +9,13 @@ common-css:
   <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
   {% include head.html %}
 
-  <body>
+  <body{% if page.url == '/' %} class="home-page"{% endif %}>
 
+    {% if page.url == '/' and jekyll.environment == 'production' %}
+    {% unless site.gtag %}
     {% include gtm_body.html %}
+    {% endunless %}
+    {% endif %}
   
     {% unless page.url == '/' %}{% include nav.html %}{% endunless %}
 

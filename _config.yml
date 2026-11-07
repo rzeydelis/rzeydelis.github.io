@@ -113,6 +113,12 @@ staticman:
 
 # --- Misc --- #
 
+# Google Analytics 4 Measurement ID for the production homepage.
+gtag: "G-YVJ7B5R6WM"
+
+# Optional Tag Manager container. Direct GA4 tracking takes priority when set.
+# gtm: "GTM-WLTKB6B7"
+
 # Facebook App ID
 # fb_app_id: ""
 
